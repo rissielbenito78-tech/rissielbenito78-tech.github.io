@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Belleza Studio - Salón de belleza. Reserva tu cita por WhatsApp.">
+
+    <title>Belleza Studio | Salón de Belleza</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="container nav">
+
+            <a href="#inicio" class="logo">
+                <span>B</span> Belleza Studio
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <nav id="navMenu">
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicio principal</a>
+    <a href="#otros-servicios">Otros servicios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <p class="subtitle">BIENVENIDA A</p>
+
+            <h1>
+                Belleza que<br>
+                <span>inspira.</span>
+            </h1>
+
+            <p class="hero-text">
+                Descubre nuestros servicios de belleza y
+                reserva tu cita de manera rápida y sencilla.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#servicios" class="btn primary">
+                    Ver servicios
+                </a>
+
+                <a href="https://wa.me/59171058439?text=Hola%20Belleza%20Studio,%20quiero%20reservar%20una%20cita."
+                   class="btn whatsapp"
+                   target="_blank">
+                    Reservar por WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICIOS ================= -->
+    <section class="services section" id="servicios">
+
+        <div class="container">
+
+            <div class="section-title">
+                <p>CATÁLOGO</p>
+                <h2>Nuestros servicios</h2>
+                <span>
+                    Elige una categoría y descubre todo lo que tenemos para ti.
+                </span>
+            </div>
+
+
+            <!-- CATEGORÍAS -->
+            <div class="categories">
+
+                <button class="category active" data-category="todos">
+                    Todos
+                </button>
+
+                <button class="category" data-category="cabello">
+                    Cabello
+                </button>
+
+                <button class="category" data-category="unas">
+                     Uñas
+                </button>
+
+                <button class="category" data-category="maquillaje">
+                     Maquillaje
+                </button>
+
+                <button class="category" data-category="pestanas">
+                     Pestañas
+                </button>
+
+                <button class="category" data-category="cejas">
+                     Cejas
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCTOS / SERVICIOS -->
+            <div class="products" id="products">
+
+
+                <!-- limpieza -->
+                <article class="product" data-category="limpieza">
+
+                    <div class="product-image">
+                        <img src="lim.PNG"
+                             alt="limpieza profunda">
+
+                        <span class="tag">limpieza</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>limpieza profunda</h3>
+
+                        <p>
+                        limpieza facial profunda.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 100</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="Corte de cabello">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="product" data-category="pedicure">
+
+                    <div class="product-image">
+
+                        <img src="beneficio.PNG"
+                             alt="pedicure">
+
+                        <span class="tag">pedicure</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>pedicure</h3>
+
+                        <p>
+                            realiza tu pedicure 
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Desde Bs. 40</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="Coloración de cabello">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- UÑAS -->
+                <article class="product" data-category="dermaplaning">
+
+                    <div class="product-image">
+
+                        <img src="dermm.png"
+                             alt="Manicure">
+
+                        <span class="tag">derma</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>dermaplaning</h3>
+
+                        <p>
+                            realiza tu dermaplaning.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 60</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="dermaplaning">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="product" data-category="henna">
+
+                    <div class="product-image">
+
+                        <img src="depilacion.jpg"
+                             alt="henna">
+
+                        <span class="tag">henna</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>henna</h3>
+
+                        <p>
+                            realiza tu henna.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Desde Bs. 120</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="henna">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MAQUILLAJE -->
+                <article class="product" data-category="lifting">
+
+                    <div class="product-image">
+
+                        <img src="lifting.jpg"
+                             alt="Maquillaje">
+
+                        <span class="tag">lifting</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>lifting</h3>
+
+                        <p>
+                            realiza tu lifting.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 150</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="lifting">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PESTAÑAS -->
+                <article class="product" data-category="pestanas">
+
+                    <div class="product-image">
+
+                        <img src="coreano.jpg"
+                             alt="Pestañas">
+
+                        <span class="tag">coreano</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>diseño coreano</h3>
+
+                        <p>
+                            diseño coreano.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 130</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="diseño coreano">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                
+                <!-- CEJAS -->
+                <article class="product" data-category="cejas">
+
+                    <div class="product-image">
+
+                        <img src="laminado de cejas f.jpg"
+                             alt="Diseño de cejas">
+
+                        <span class="tag">laminado</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>laminado de cejas</h3>
+
+                        <p>
+                            Diseño personalizado para resaltar la forma natural de tu rostro.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 40</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="Diseño de cejas">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+                <!-- CEJAS -->
+                <article class="product" data-category="cejas">
+
+                    <div class="product-image">
+
+                        <img src="pestañasporpunto.jpg"
+                             alt="pestañas por punto">
+
+                        <span class="tag">pestañas</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>pestañas</h3>
+
+                        <p>
+                            pestañas por punto.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 40</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="pestañas por puntos">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+                <!-- CEJAS -->
+                <article class="product" data-category="cejas">
+
+                    <div class="product-image">
+
+                        <img src="peloapelo3.jpg"
+                             alt="pestañas pelo a pelo">
+
+                        <span class="tag">pestañas</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>pestañas pelo a pelo</h3>
+
+                        <p>
+                            Diseño personalizado para resaltar tu mirada.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 40</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="pestañas pelo a pelo">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+                <!-- CEJAS -->
+                <article class="product" data-category="cejas">
+
+                    <div class="product-image">
+
+                        <img src="depibozo.jpg"
+                             alt="Depilacion de bozo">
+
+                        <span class="tag">bozo</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Depilacion de bozo</h3>
+
+                        <p>
+                            Depilacion de bozo.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 40</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="Depilacion">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+                <!-- CEJAS -->
+                <article class="product" data-category="depilacion">
+
+                    <div class="product-image">
+
+                        <img src="axila.jpg"
+                             alt="depilacion de axila">
+
+                        <span class="tag">axila</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Depilacion de axila</h3>
+
+                        <p>
+                            Depilacion de axila.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 40</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="Depilacion de axila">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+                <!-- CEJAS -->
+                <article class="product" data-category="cejas">
+
+                    <div class="product-image">
+
+                        <img src="brazo.jpg"
+                             alt="depilacion brazo">
+
+                        <span class="tag">depilacion brazo</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>depilacion de brazo</h3>
+
+                        <p>
+                         depilacion de brazo
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 40</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="Depilacion de brazo">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+                <!-- CEJAS -->
+                <article class="product" data-category="cejas">
+
+                    <div class="product-image">
+
+                        <img src="pierna.jpg"
+                             alt="depilacion de piernas">
+
+                        <span class="tag">piernas</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>depilacion de pierna</h3>
+
+                        <p>
+                            depila tus piernas
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 40</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="depilacion">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+                <!-- CEJAS -->
+                <article class="product" data-category="cejas">
+
+                    <div class="product-image">
+
+                        <img src="soft.jpg"
+                             alt="soft">
+
+                        <span class="tag">soft</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Diseño de cejas</h3>
+
+                        <p>
+                            realizate tu soft gel
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 40</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="soft gel">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+                <!-- CEJAS -->
+                <article class="product" data-category="cejas">
+
+                    <div class="product-image">
+
+                        <img src="poly.jpg"
+                             alt="Diseño de cejas">
+
+                        <span class="tag">poly gel</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>poly gel</h3>
+
+                        <p>
+                            realiza tu poly gel
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 40</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="poly gel">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- OTROS SERVICIOS -->
+<section class="services section" id="otros-servicios">
+
+    <div class="container">
+
+        <div class="section-title">
+            <p>SERVICIOS ESPECIALES</p>
+            <h2>Otros servicios</h2>
+            <span>
+                Descubre más opciones para realzar tu belleza.
+            </span>
+        </div>
+
+        <div class="products">
+
+            <!-- PEINADOS -->
+            <article class="product">
+
+                <div class="product-image">
+                    <img src="acrilicas.jpg" alt="uñas acrilicas ">
+                    <span class="tag">uñas acrilicas </span>
+                </div>
+
+                <div class="product-info">
+                    <h3>uñas acrilicas</h3>
+
+                    <p>
+                        realizate tus uñas acrilicas
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>Desde Bs. 80</strong>
+
+                        <button class="reserve-btn"
+                                data-service="uñas acrilicas">
+                            Reservar
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+            <!-- TRATAMIENTOS CAPILARES -->
+            <article class="product">
+
+                <div class="product-image">
+                    <img src="acripie.jpg"
+                         alt="Tratamientos capilares">
+                    <span class="tag">acripie</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>acripie</h3>
+
+                    <p>
+                        realizate tu acripie
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>Desde Bs. 100</strong>
+
+                        <button class="reserve-btn"
+                                data-service="Tratamientos capilares">
+                            Reservar
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+               <!-- TRATAMIENTOS CAPILARES 2 -->
+            <article class="product">
+
+                <div class="product-image">
+                    <img src="semipermanente.jpg"
+                         alt="Tratamientos capilares">
+                    <span class="tag">alisado</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>alisado semipermanente</h3>
+
+                    <p>
+                        realizate tu alizado semipermanente
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>Desde Bs. 300</strong>
+
+                        <button class="reserve-btn"
+                                data-service="alisado semipermanente">
+                            Reservar
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+               <!-- TRATAMIENTOS CAPILARES 3-->
+            <article class="product">
+
+                <div class="product-image">
+                    <img src="alisqado.jpg"
+                         alt="Tratamientos capilares">
+                    <span class="tag">alisado</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>alisado organico</h3>
+
+                    <p>
+                        dale brillo a tu cabello
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>Desde Bs. 180</strong>
+
+                        <button class="reserve-btn"
+                                data-service="alisado organico">
+                            Reservar
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+             <!-- TRATAMIENTOS CAPILARES 3-->
+            <article class="product">
+
+                <div class="product-image">
+                    <img src="bañodeluna.jpg"
+                         alt="Tratamientos capilares">
+                    <span class="tag">baño de luna</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>baño de luna </h3>
+
+                    <p>
+                        aclara tu tono de piel 
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>Desde Bs. 180</strong>
+
+                        <button class="reserve-btn"
+                                data-service="Tratamientos capilares">
+                            Reservar
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+             <!-- TRATAMIENTOS CAPILARES 3-->
+            <article class="product">
+
+                <div class="product-image">
+                    <img src="caracuello.jpg"
+                         alt="Tratamientos capilares">
+                    <span class="tag">baño de luna </span>
+                </div>
+
+                <div class="product-info">
+                    <h3>baño de luna facial y cuello</h3>
+
+                    <p>
+                     aclara tu tono de piel 
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>Desde Bs. 180</strong>
+
+                        <button class="reserve-btn"
+                                data-service="Tratamientos capilares">
+                            Reservar
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- ================= GALERÍA ================= -->
+    <section class="gallery section" id="galeria">
+
+        <div class="container">
+
+            <div class="section-title">
+                <p>NUESTRO TRABAJO</p>
+                <h2>Galería</h2>
+            </div>
+
+            <div class="gallery-grid">
+
+                <img src="poooo.PNG"
+                     alt="Trabajo de belleza">
+
+                <img src="uñas.PNG"
+                     alt="Trabajo de uñas">
+
+                <img src="uñaaaaaaa.PNG"
+                     alt="Maquillaje">
+
+                <img src="serviciooooo.PNG"
+                     alt="Belleza">
+
+                     <img src="uñaaaaaaaaa2.PNG"
+                     alt="Belleza">
+
+                     <img src="piee.PNG"
+                     alt="Belleza">
+
+                     <img src="uña3.PNG"
+                     alt="Belleza">
+
+                     <img src="pie2.PNG"
+                     alt="Belleza">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACTO ================= -->
+    <section class="contact section" id="contacto">
+
+        <div class="container contact-box">
+
+            <div>
+
+                <p class="small-title">¿LISTA PARA TU CAMBIO?</p>
+
+                <h2>
+                    Reserva tu cita
+                </h2>
+
+                <p>
+                    Escríbenos para agenda tu próximo servicio.
+                </p>
+
+            </div>
+
+            <a href="https://wa.me/59171058439?text=Hola%20Belleza%20Studio,%20quiero%20reservar%20una%20cita."
+               target="_blank"
+               class="btn whatsapp large">
+
+                 WhatsApp
+            </a>
+            
+            <a href="https://www.facebook.com/share/1MQjvG3RnW/?mibextid=wwXIfr."
+               target="_blank"
+               class="btn facebook large">
+
+             facebook 
+            </a>
+            
+            <a href="https://www.tiktok.com/@caliali_4579?_r=1&_t=ZS-9AOW9MpwDOm."
+               target="_blank"
+               class="btn tiktok large">
+
+                tiktok
+            </a>
+            
+            <a href="https://www.instagram.com/alisonchoquearce?psln=NWprZnpnYXpsaDF5&utm_source=qr"
+               target="_blank"
+               class="btn instagram large">
+
+                instagram 
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+                <h3>Belleza Studio</h3>
+                <p>
+                    Tu belleza, nuestro arte.
+                </p>
+            </div>
+
+            <div>
+                <p>📱 WhatsApp: 71058439</p>
+                <p>🕐 Lun - Sáb: 09:00 - 19:00</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Belleza Studio. Todos los derechos reservados.
+        </div>
+
+    </footer>
+
+
+    <!-- MODAL DE RESERVA -->
+    <div class="modal" id="modal">
+
+        <div class="modal-content">
+
+            <button class="close" id="closeModal">
+                ×
+            </button>
+
+            <p class="small-title">
+                RESERVAR CITA
+            </p>
+
+            <h2 id="selectedService">
+                Servicio
+            </h2>
+
+            <label>
+                Tu nombre
+            </label>
+
+            <input type="text"
+                   id="clientName"
+                   placeholder="Escribe tu nombre">
+
+            <label>
+                Fecha deseada
+            </label>
+
+            <input type="date"
+                   id="date">
+
+            <label>
+                Hora deseada
+            </label>
+
+            <input type="time"
+                   id="time">
+
+            <button class="btn whatsapp modal-btn"
+                    id="sendWhatsapp">
+
+                💬 Confirmar por WhatsApp
+
+            </button>
+            
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
